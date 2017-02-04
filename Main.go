@@ -1,19 +1,28 @@
 package main
 
 import (
-	"fmt"
 	"github.com/jinzhu/gorm"
+	"github.com/kataras/iris"
+	"net/http"
 )
 
 func main() {
-	fmt.Print("This Service For Token")
 	migrateDB(dba())
 
-	token := Token{}
-	token.Token = "13f939b6e33316db7e2306a058c22bb0"
-	status,message := token.checkToken(dba())
-	println(status)
-	println(message)
+	api := iris.New()
+	gits_token := api.Party("/gits-token")
+
+	api.Get("/", func(ctx *iris.Context) {
+		ctx.JSON(iris.StatusOK,iris.Map{"status":true,"message":"Hello from the toke-service"})
+	})
+	gits_token.Post("/",createToken)
+	gits_token.Put("/",validToken)
+	gits_token.Delete("/",deleteToken)
+	gits_token.Post("/update",updateToken)
+
+	api.Build()
+	fsrv := &http.Server{Handler: api.Router, Addr: ":8080"}
+	fsrv.ListenAndServe()
 }
 
 //SETUP DB

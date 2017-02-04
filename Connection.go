@@ -18,6 +18,7 @@ type DBToken struct {
 func (dbToken *DBToken) getConnection() *gorm.DB {
 	var s = dbToken.username+":"+dbToken.password+"@"+dbToken.db_host+"/"+dbToken.db_name+"?charset=utf8&parseTime=True&loc=Local"
 	fmt.Print(s)
+
 	dba, err := gorm.Open(dbToken.type_db, dbToken.username+":"+dbToken.password+"@"+dbToken.db_host+"/"+dbToken.db_name+"?charset=utf8&parseTime=True&loc=Local")
 	if err == nil {
 		dbToken.dbToken = dba

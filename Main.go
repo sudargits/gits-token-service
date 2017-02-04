@@ -13,7 +13,7 @@ func main() {
 	gits_token := api.Party("/gits-token")
 
 	api.Get("/", func(ctx *iris.Context) {
-		ctx.JSON(iris.StatusOK,iris.Map{"status":true,"message":"Hello from the toke-service"})
+		ctx.JSON(iris.StatusOK,iris.Map{"status":true,"message":"Hello from the token-service"})
 	})
 	gits_token.Post("/",createToken)
 	gits_token.Put("/",validToken)
@@ -27,7 +27,7 @@ func main() {
 
 //SETUP DB
 var dba = func() (*gorm.DB){
-	dbs := DBToken{"mysql", "mysql", "21484eb879a418bb","172.17.0.2", "token-service", nil}
+	dbs := DBToken{"mysql", "mysql", "21484eb879a418bb","token-service","dokku-mysql-token-service", , nil}
 	dbs.getConnection()
 	return dbs.dbToken
 }

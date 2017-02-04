@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;token-service&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../github.com" />
+      <root url="file://$PROJECT_DIR$/../user-app" />
+      <root url="file://$PROJECT_DIR$/../gopkg.in" />
+      <root url="file://$PROJECT_DIR$/../service-user" />
+      <root url="file://$PROJECT_DIR$/../user-management" />
+      <root url="file://$PROJECT_DIR$/../golang.org" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../github.com" />
+      <root url="file://$PROJECT_DIR$/../user-app" />
+      <root url="file://$PROJECT_DIR$/../gopkg.in" />
+      <root url="file://$PROJECT_DIR$/../service-user" />
+      <root url="file://$PROJECT_DIR$/../user-management" />
+      <root url="file://$PROJECT_DIR$/../golang.org" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>

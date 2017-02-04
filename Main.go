@@ -27,7 +27,7 @@ func main() {
 
 //SETUP DB
 var dba = func() (*gorm.DB){
-	dbs := DBToken{"mysql", "mysql", "21484eb879a418bb","token-service","172.17.0.2",nil}
+	dbs := DBToken{"mysql", "mysql", "21484eb879a418bb","token-service","dokku-mysql-token-service:3306",nil}
 	dbs.getConnection()
 	return dbs.dbToken
 }

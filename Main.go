@@ -21,7 +21,7 @@ func main() {
 	gits_token.Post("/update",updateToken)
 
 	api.Build()
-	fsrv := &http.Server{Handler: api.Router, Addr: ":8080"}
+	fsrv := &http.Server{Handler: api.Router, Addr: ":5000"}
 	fsrv.ListenAndServe()
 }
 

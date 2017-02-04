@@ -7,6 +7,10 @@
 			"revision": ""
 		},
 		{
+			"path": "appengine/cloudsql",
+			"revision": ""
+		},
+		{
 			"path": "context",
 			"revision": ""
 		},
@@ -69,6 +73,12 @@
 			"revisionTime": "2016-11-19T13:53:50Z"
 		},
 		{
+			"checksumSHA1": "QD6LqgLz2JMxXqns8TaxtK9AuHs=",
+			"path": "github.com/go-sql-driver/mysql",
+			"revision": "2e00b5cd70399450106cec6431c2e2ce3cae5034",
+			"revisionTime": "2016-12-24T12:10:19Z"
+		},
+		{
 			"checksumSHA1": "Bn+jLz/gDn8d6apEb70H9fvMOec=",
 			"path": "github.com/google/go-github/github",
 			"revision": "27c7c32b6d369610435bd2ad7b4d8554f235eb01",
@@ -125,6 +135,12 @@
 		{
 			"checksumSHA1": "V2HWbIfTq4lgUO8PNZXnO3nI520=",
 			"path": "github.com/jinzhu/gorm",
+			"revision": "23abd03a95a16de0ef2d559979ead26b2a3cce66",
+			"revisionTime": "2017-02-02T14:29:41Z"
+		},
+		{
+			"checksumSHA1": "eECxSkwh0WmhLwaxHfkvcLOWS08=",
+			"path": "github.com/jinzhu/gorm/dialects/mysql",
 			"revision": "23abd03a95a16de0ef2d559979ead26b2a3cce66",
 			"revisionTime": "2017-02-02T14:29:41Z"
 		},
